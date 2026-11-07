@@ -1,0 +1,13 @@
+# Core
+qiskit==2.6.2
+qiskit-aer==0.18.2
+numpy==2.5.4
+matplotlib==3.11.2
+pylatexenc==2.11
+
+# Notebook runtime
+ipykernel
+
+# Testing: run every lab notebook top-to-bottom
+pytest
+nbmake
