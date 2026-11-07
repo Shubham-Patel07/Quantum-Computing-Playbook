@@ -88,5 +88,5 @@ The Shor code detected and corrected every single-qubit $X$, $Z$ and $Y$ error, 
 3. Why does correcting only $X$ and $Z$ errors also correct an arbitrary single-qubit rotation?
 4. What happens with two $X$ errors in the *same* block? In *different* blocks?
 5. Write down all 8 stabilizer generators of the Shor code.
-6. Why are bit-flips corrected before the phase syndrome is measured?
+6. Does an $X$ error change the phase syndrome `p`? Explain using the commutation of $X_i$ with the $X$-type stabilizers.
 7. How does the Shor code compare with the 7-qubit Steane code and the 5-qubit perfect code?
