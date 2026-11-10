@@ -8,14 +8,16 @@ pip install qiskit qiskit_aer pylatexenc matplotlib
 Run
 ---
 Open a notebook in Jupyter and run the cells in order.
-Each notebook asks for its inputs (amplitudes, error qubit, message, ...)
-when the first cell runs. The second cell saves the circuit diagram as a PNG.
+Most notebooks ask for their inputs (amplitudes, error qubit, message, ...)
+when the first cell runs, and the second cell saves the circuit diagram as a PNG.
+0_2_SingleQubitGates and 0_4_BellStates have no inputs: they have one cell
+per gate or Bell state, each drawing its own circuit.
 
 Experiments
 -----------
 0_Basics/
   0_1_FirstCircuit               X gate, statevector, measurement
-  0_2_SingleQubitGates           single-qubit gates (I, X, Y, Z, H, S, T, SX, RX, RY, RZ, P, U) and the Bloch sphere
+  0_2_SingleQubitGates           one cell per gate: H, X, Y, Z, S, T, S dagger, T dagger, I
   0_3_Superposition_Measurement  Ry(theta) superposition and the Born rule
   0_4_BellStates                 circuits for the four Bell states (Phi+, Phi-, Psi+, Psi-)
 
