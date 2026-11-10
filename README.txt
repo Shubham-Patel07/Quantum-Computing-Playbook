@@ -15,7 +15,7 @@ Experiments
 -----------
 0_Basics/
   0_1_FirstCircuit               X gate, statevector, measurement
-  0_2_SingleQubitGates           X, Y, Z, H, S, T gates and the Bloch sphere
+  0_2_SingleQubitGates           single-qubit gates (I, X, Y, Z, H, S, T, SX, RX, RY, RZ, P, U) and the Bloch sphere
   0_3_Superposition_Measurement  Ry(theta) superposition and the Born rule
   0_4_BellStates                 circuits for the four Bell states (Phi+, Phi-, Psi+, Psi-)
 
