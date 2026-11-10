@@ -11,7 +11,8 @@ Open a notebook in Jupyter and run the cells in order.
 Most notebooks ask for their inputs (amplitudes, error qubit, message, ...)
 when the first cell runs, and the second cell saves the circuit diagram as a PNG.
 0_2_SingleQubitGates and 0_4_BellStates have no inputs: they have one cell
-per gate or Bell state, each drawing its own circuit.
+per gate or Bell state, each followed by a cell that saves its circuit as a
+PNG (0_2_1_H.png ... 0_2_9_I.png, 0_4_1_PhiPlus.png ... 0_4_4_PsiMinus.png).
 
 Experiments
 -----------
