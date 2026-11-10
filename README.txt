@@ -11,16 +11,16 @@ Open a notebook in Jupyter and run the cells in order.
 Most notebooks ask for their inputs (amplitudes, error qubit, message, ...)
 when the first cell runs, and the second cell saves the circuit diagram as a PNG.
 0_2_SingleQubitGates and 0_4_BellStates have no inputs: they have one cell
-per gate or Bell state, each followed by a cell that saves its circuit as a
-PNG (0_2_1_H.png ... 0_2_9_I.png, 0_4_1_PhiPlus.png ... 0_4_4_PsiMinus.png).
+per gate or Bell state, each followed by a cell that saves its circuit as a PNG.
+Every PNG is saved in the same folder as its notebook.
 
 Experiments
 -----------
 0_Basics/
-  0_1_FirstCircuit               X gate, statevector, measurement
-  0_2_SingleQubitGates           one cell per gate: H, X, Y, Z, S, T, S dagger, T dagger, I
-  0_3_Superposition_Measurement  Ry(theta) superposition and the Born rule
-  0_4_BellStates                 circuits for the four Bell states (Phi+, Phi-, Psi+, Psi-)
+  0_1_FirstCircuit/              X gate, statevector, measurement
+  0_2_SingleQubitGates/          one cell per gate: H, X, Y, Z, S, T, S dagger, T dagger, I
+  0_3_Superposition_Measurement/ Ry(theta) superposition and the Born rule
+  0_4_BellStates/                circuits for the four Bell states (Phi+, Phi-, Psi+, Psi-)
 
 1_Teleportation/
   1_Teleportation                teleport alpha|0> + beta|1> using a Bell pair
