@@ -17,7 +17,7 @@ Experiments
   0_1_FirstCircuit               X gate, statevector, measurement
   0_2_SingleQubitGates           X, Y, Z, H, S, T gates and the Bloch sphere
   0_3_Superposition_Measurement  Ry(theta) superposition and the Born rule
-  0_4_BellStates                 the four Bell states and their correlations
+  0_4_BellStates                 circuits for the four Bell states (Phi+, Phi-, Psi+, Psi-)
 
 1_Teleportation/
   1_Teleportation                teleport alpha|0> + beta|1> using a Bell pair
