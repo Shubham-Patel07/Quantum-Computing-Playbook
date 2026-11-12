@@ -6,7 +6,7 @@ To prepare a single-qubit superposition, check the Born rule by repeated measure
 ## Theory
 **Superposition.** The rotation $R_y(\theta)$ takes $|0\rangle$ to
 
-$$|\psi(\theta)\rangle = \cos\tfrac{\theta}{2}\,|0\rangle + \sin\tfrac{\theta}{2}\,|1\rangle .$$
+$$|\psi(\theta)\rangle = \cos\tfrac{\theta}{2}\thinspace |0\rangle + \sin\tfrac{\theta}{2}\thinspace |1\rangle .$$
 
 **Born rule.** Measuring in the computational ($Z$) basis gives
 
@@ -16,7 +16,7 @@ A single measurement gives only one random bit. Probabilities can only be *estim
 
 **Sampling error.** The count of `1`s follows a binomial distribution, so the estimate $\hat p = n_1/N$ has standard error
 
-$$\sigma = \sqrt{\frac{P(1)\,(1-P(1))}{N}} \;\propto\; \frac{1}{\sqrt N}.$$
+$$\sigma = \sqrt{\frac{P(1)\thinspace (1-P(1))}{N}} \thickspace \propto \thickspace \frac{1}{\sqrt N}.$$
 
 Getting one more decimal digit of accuracy takes about 100× more shots.
 

@@ -6,7 +6,7 @@ To encode a qubit into the 3-qubit repetition code, inject a single bit-flip ($X
 ## Theory
 **Encoding.** Two CNOTs spread the state over three qubits:
 
-$$\alpha|0\rangle + \beta|1\rangle \;\longrightarrow\; \alpha|000\rangle + \beta|111\rangle .$$
+$$\alpha|0\rangle + \beta|1\rangle \thickspace \longrightarrow \thickspace \alpha|000\rangle + \beta|111\rangle .$$
 
 This is *not* cloning. The result is an entangled state, not $|\psi\rangle^{\otimes 3}$.
 

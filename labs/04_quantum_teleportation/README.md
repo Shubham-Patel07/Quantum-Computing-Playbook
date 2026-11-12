@@ -10,11 +10,11 @@ $$|\Phi^+\rangle = \tfrac{1}{\sqrt2}(|00\rangle + |11\rangle).$$
 
 Alice applies a CNOT from `q[0]` to `q[1]` and then a Hadamard on `q[0]`. This rotates her two qubits into the Bell basis, and the three-qubit state becomes
 
-$$\tfrac12 \sum_{m_0,m_1\in\{0,1\}} |m_0 m_1\rangle \otimes X^{m_1} Z^{m_0}\,|\psi\rangle .$$
+$$\tfrac12 \sum_{m_0,m_1\in\lbrace 0,1\rbrace } |m_0 m_1\rangle \otimes X^{m_1} Z^{m_0}\thinspace |\psi\rangle .$$
 
 When Alice measures, she gets one of the four outcomes $m_0 m_1$ with probability $1/4$. Bob's qubit is then left in $X^{m_1}Z^{m_0}|\psi\rangle$. Alice sends the two bits to Bob over a classical channel, and Bob undoes the distortion:
 
-| $m_0\,m_1$ | Bob's qubit before correction | Correction |
+| $m_0\thinspace m_1$ | Bob's qubit before correction | Correction |
 |---|---|---|
 | 00 | $\alpha\|0\rangle + \beta\|1\rangle$ | $I$ |
 | 01 | $\beta\|0\rangle + \alpha\|1\rangle$ | $X$ |
