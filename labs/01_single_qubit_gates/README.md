@@ -12,15 +12,30 @@ which is a point on the unit sphere with polar angle $\theta$ and azimuth $\phi$
 
 **Gates are rotations.** Every single-qubit unitary is a rotation of the Bloch sphere.
 
-| Gate | Matrix | Bloch-sphere action | $\|0\rangle \mapsto$ |
-|---|---|---|---|
-| $X$ | $\begin{pmatrix}0&1\\1&0\end{pmatrix}$ | $\pi$ about $x$ | $\|1\rangle$ |
-| $Y$ | $\begin{pmatrix}0&-i\\i&0\end{pmatrix}$ | $\pi$ about $y$ | $i\|1\rangle$ |
-| $Z$ | $\begin{pmatrix}1&0\\0&-1\end{pmatrix}$ | $\pi$ about $z$ | $\|0\rangle$ |
-| $H$ | $\tfrac{1}{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}$ | $\pi$ about $(x+z)/\sqrt2$ | $\|+\rangle$ |
-| $S$ | $\begin{pmatrix}1&0\\0&i\end{pmatrix}$ | $\pi/2$ about $z$ | $\|0\rangle$ |
-| $T$ | $\begin{pmatrix}1&0\\0&e^{i\pi/4}\end{pmatrix}$ | $\pi/4$ about $z$ | $\|0\rangle$ |
-| $R_y(\theta)$ | $\begin{pmatrix}\cos\frac\theta2&-\sin\frac\theta2\\ \sin\frac\theta2&\cos\frac\theta2\end{pmatrix}$ | $\theta$ about $y$ | $\cos\frac\theta2\|0\rangle+\sin\frac\theta2\|1\rangle$ |
+| Gate | Bloch-sphere action | $\|0\rangle \mapsto$ |
+|---|---|---|
+| $X$ | $\pi$ about $x$ | $\|1\rangle$ |
+| $Y$ | $\pi$ about $y$ | $i\|1\rangle$ |
+| $Z$ | $\pi$ about $z$ | $\|0\rangle$ |
+| $H$ | $\pi$ about $(x+z)/\sqrt2$ | $\|+\rangle$ |
+| $S$ | $\pi/2$ about $z$ | $\|0\rangle$ |
+| $T$ | $\pi/4$ about $z$ | $\|0\rangle$ |
+| $R_y(\theta)$ | $\theta$ about $y$ | $\cos\frac\theta2\|0\rangle+\sin\frac\theta2\|1\rangle$ |
+
+**Matrices.**
+
+```math
+X = \begin{pmatrix}0 & 1\\ 1 & 0\end{pmatrix}, \quad
+Y = \begin{pmatrix}0 & -i\\ i & 0\end{pmatrix}, \quad
+Z = \begin{pmatrix}1 & 0\\ 0 & -1\end{pmatrix}, \quad
+H = \frac{1}{\sqrt2}\begin{pmatrix}1 & 1\\ 1 & -1\end{pmatrix}
+```
+
+```math
+S = \begin{pmatrix}1 & 0\\ 0 & i\end{pmatrix}, \quad
+T = \begin{pmatrix}1 & 0\\ 0 & e^{i\pi/4}\end{pmatrix}, \quad
+R_y(\theta) = \begin{pmatrix}\cos\frac\theta2 & -\sin\frac\theta2\\ \sin\frac\theta2 & \cos\frac\theta2\end{pmatrix}
+```
 
 **Useful identities.** $HZH = X$, $HXH = Z$, $S^2 = Z$, $T^2 = S$, $XZ = -iY$, $H^2 = I$.
 

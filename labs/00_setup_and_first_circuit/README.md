@@ -8,9 +8,17 @@ To set up the Qiskit environment, build a first quantum circuit, look at its sta
 
 $$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle, \qquad |\alpha|^2 + |\beta|^2 = 1,$$
 
-with $|0\rangle = \begin{pmatrix}1\\0\end{pmatrix}$ and $|1\rangle = \begin{pmatrix}0\\1\end{pmatrix}$.
+with the basis states
 
-**X gate.** The quantum NOT gate $X = \begin{pmatrix}0&1\\1&0\end{pmatrix}$ swaps $|0\rangle$ and $|1\rangle$.
+```math
+|0\rangle = \begin{pmatrix}1\\ 0\end{pmatrix}, \qquad |1\rangle = \begin{pmatrix}0\\ 1\end{pmatrix}.
+```
+
+**X gate.** The quantum NOT gate swaps $|0\rangle$ and $|1\rangle$:
+
+```math
+X = \begin{pmatrix}0 & 1\\ 1 & 0\end{pmatrix}.
+```
 
 **Measurement.** Measuring in the computational basis gives `0` with probability $|\alpha|^2$ and `1` with probability $|\beta|^2$ (the Born rule).
 
