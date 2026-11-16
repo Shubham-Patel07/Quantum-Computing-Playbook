@@ -1,6 +1,6 @@
 # Quantum Computing Lab
 
-Qiskit notebooks for the M.Tech quantum computing lab. The experiments start with single-qubit gates and entanglement, then cover quantum teleportation, superdense coding, quantum error correction and the Deutsch / Deutsch-Jozsa algorithms.
+Qiskit notebooks for the M.Tech quantum computing lab. The experiments start with single-qubit gates and entanglement, then cover quantum teleportation, superdense coding, quantum error correction and the Deutsch, Deutsch-Jozsa and Bernstein-Vazirani algorithms.
 
 ## Experiments
 
@@ -17,6 +17,7 @@ Qiskit notebooks for the M.Tech quantum computing lab. The experiments start wit
 | 3.3 | [Shor 9-Qubit Code](3_ErrorCorrection/3_3_Shor9Bit_BitFlip_PhaseFlip.ipynb) | corrects any single-qubit error (X, Z or Y) | α, β, X-error qubit, Z-error qubit |
 | 4.1 | [Deutsch Algorithm](4_DeutschAlgorithms/4_1_Deutsch.ipynb) | constant or balanced 1-bit function with one oracle call | function f (1–4) |
 | 4.2 | [Deutsch-Jozsa Algorithm](4_DeutschAlgorithms/4_2_DeutschJozsa.ipynb) | constant or balanced n-bit function with one oracle call | n, oracle type, output value or bit string b |
+| 5 | [Bernstein-Vazirani Algorithm](5_BernsteinVazirani) | finds a hidden n-bit string s with one oracle call | secret string s |
 
 Each notebook starts with a short description of the experiment.
 
@@ -50,6 +51,7 @@ jupyter notebook
 | 4.1 Deutsch | `1` (f(x) = 0) | measured `0`, *Function is: CONSTANT* |
 | 4.2 Deutsch-Jozsa | n = `3`, `balanced`, b = `101` | measured `101` (= b), *Function is: BALANCED* |
 | 4.2 Deutsch-Jozsa | n = `3`, `constant`, f(x) = `1` | measured `000`, *Function is: CONSTANT* |
+| 5 Bernstein-Vazirani | s = `1011` | measured `1011`, *Correct: True*, 1 quantum call vs 4 classical |
 
 Amplitudes are normalized automatically and can be complex (e.g. `0.6j`). In the Shor code, press Enter without a number to skip that error. Use the same qubit for X and Z to make a Y error.
 
@@ -65,6 +67,7 @@ Amplitudes are normalized automatically and can be complex (e.g. `0.6j`). In the
 2_SuperDenseCoding/                 notebook + circuit PNG
 3_ErrorCorrection/                  bit-flip, phase-flip and Shor notebooks + their PNGs
 4_DeutschAlgorithms/                Deutsch and Deutsch-Jozsa notebooks + their PNGs
+5_BernsteinVazirani/                notebook + circuit PNG
 ```
 
 ## Notes
