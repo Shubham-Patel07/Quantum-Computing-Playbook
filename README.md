@@ -1,6 +1,6 @@
 # Quantum Computing Lab
 
-Qiskit notebooks for the M.Tech quantum computing lab. The experiments start with single-qubit gates and entanglement, then cover quantum teleportation, superdense coding, quantum error correction and the Deutsch, Deutsch-Jozsa, Bernstein-Vazirani and Grover algorithms.
+Qiskit notebooks for the M.Tech quantum computing lab. The experiments start with single-qubit gates and entanglement, then cover quantum teleportation, superdense coding, quantum error correction and the Deutsch, Deutsch-Jozsa, Bernstein-Vazirani, Grover and Simon algorithms.
 
 ## Experiments
 
@@ -19,6 +19,7 @@ Qiskit notebooks for the M.Tech quantum computing lab. The experiments start wit
 | 4.2 | [Deutsch-Jozsa Algorithm](4_DeutschAlgorithms/4_2_DeutschJozsa.ipynb) | constant or balanced n-bit function with one oracle call | n, oracle type, output value or bit string b |
 | 5 | [Bernstein-Vazirani Algorithm](5_BernsteinVazirani) | finds a hidden n-bit string s with one oracle call | secret string s |
 | 6 | [Grover's Search](6_Grover) | finds a marked item among 2ⁿ in about (π/4)·√N oracle calls | marked state |
+| 7 | [Simon's Algorithm](7_Simon) | finds the hidden period s of a two-to-one function f(x) = f(x ⊕ s) | secret string s |
 
 Each notebook starts with a short description of the experiment.
 
@@ -54,6 +55,7 @@ jupyter notebook
 | 4.2 Deutsch-Jozsa | n = `3`, `constant`, f(x) = `1` | measured `000`, *Function is: CONSTANT* |
 | 5 Bernstein-Vazirani | s = `1011` | measured `1011`, *Correct: True*, 1 quantum call vs 4 classical |
 | 6 Grover | marked = `101` | 2 iterations, `101` measured ≈ 94% of shots, *Correct: True* |
+| 7 Simon | s = `110` | measured y ∈ {000, 001, 110, 111}, all with y·s = 0; recovered s = `110`, *Correct: True* |
 
 Amplitudes are normalized automatically and can be complex (e.g. `0.6j`). In the Shor code, press Enter without a number to skip that error. Use the same qubit for X and Z to make a Y error.
 
@@ -71,6 +73,7 @@ Amplitudes are normalized automatically and can be complex (e.g. `0.6j`). In the
 4_DeutschAlgorithms/                Deutsch and Deutsch-Jozsa notebooks + their PNGs
 5_BernsteinVazirani/                notebook + circuit PNG
 6_Grover/                           notebook + circuit PNG
+7_Simon/                            notebook + circuit PNG
 ```
 
 ## Notes
